@@ -1,3 +1,3 @@
 # Git cheatsheet
 
-[Line commands I use but not so often to know them by the heart](blob/master/git-cheatsheet.md)
+[Line commands I use but not so often to know them by the heart](git-cheatsheet.md)
