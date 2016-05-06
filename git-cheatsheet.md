@@ -19,6 +19,10 @@
 * Short way:
 
  `git checkout -b <branch_name>`
+ 
+## Rename branch
+
+`git branch -m <oldname> <newname>`
 
 ## Push new branch to remote
 
