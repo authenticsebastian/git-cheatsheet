@@ -6,7 +6,7 @@
 
 ## Get remote branch locally
 
-`git checkout -b repo-name origin/repo-name`
+`git checkout -b <repo-name> origin/<repo-name>`
 
 ## Create branch
 
@@ -62,6 +62,12 @@ Comes handy if you want to change branch without committing current stuff.
 * To list:
 
  `git stash list`
+
+## Changing commit message
+
+`git commit -amend`
+
+But only if commit hasn’t been pushed to repo. Otherwise it might cause problems.
 
 ## Credentials
 
