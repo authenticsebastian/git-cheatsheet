@@ -62,6 +62,14 @@ Comes handy if you want to change branch without committing current stuff.
 * To list:
 
  `git stash list`
+ 
+## Creating tag
+
+`git tag -a <version, i.e. 1.0.0> -m '<description'`
+
+## Pushing tag
+
+`git push --follow-tags`
 
 ## Changing commit message
 
