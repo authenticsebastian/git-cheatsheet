@@ -13,13 +13,13 @@
 * Long way:
 
  `git branch <branch_name>`
- 
+
  `git checkout <branch_name>`
- 
+
 * Short way:
 
  `git checkout -b <branch_name>`
- 
+
 ## Rename branch
 
 `git branch -m <oldname> <newname>`
@@ -39,9 +39,9 @@
 * Remote:
 
  `git push origin :<branch-name>`
- 
+
  Looks strange, so to picture this: you’re pushing `<nothing>:<branch-name>`.
- 
+
 * Cleaning information on remote branches
 
  `git remote prune origin`
@@ -62,7 +62,7 @@ Comes handy if you want to change branch without committing current stuff.
 * To list:
 
  `git stash list`
- 
+
 ## Creating tag
 
 `git tag -a <version, i.e. 1.0.0> -m '<description'`
@@ -86,3 +86,17 @@ But only if commit hasn’t been pushed to repo. Otherwise it might cause proble
 * To clear remembering credentials:
 
  `git config --global --unset credential.helper`
+
+## Getting rid of `.idea`
+
+If someone committed and pushed `.idea` folder to the repo, it will become problematic. This is the solution:
+
+```
+mv .idea ../.idea_backup
+rm .idea # in case you forgot to close your IDE
+git add .idea
+git commit -m "Remove .idea from repo"
+mv ../.idea_backup .idea
+```
+
+After than make sure to ignore `.idea` in your `.gitignore`.
