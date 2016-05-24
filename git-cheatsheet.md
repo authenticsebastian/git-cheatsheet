@@ -77,6 +77,12 @@ Comes handy if you want to change branch without committing current stuff.
 
 But only if commit hasn’t been pushed to repo. Otherwise it might cause problems.
 
+## Resetting branch
+
+When stuff is committed but not pushed.
+
+`git reset --hard origin/master`
+
 ## Credentials
 
 * To remember credentials by deamon:
