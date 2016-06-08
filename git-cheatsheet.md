@@ -63,6 +63,10 @@ Comes handy if you want to change branch without committing current stuff.
 
  `git stash list`
 
+## Listing names of new files
+
+`git diff --name-only --diff-filter=A master <branch-name>`
+
 ## Creating tag
 
 `git tag -a <version, i.e. 1.0.0> -m '<description'`
