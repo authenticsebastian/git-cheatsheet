@@ -87,6 +87,23 @@ When stuff is committed but not pushed.
 
 `git reset --hard origin/master`
 
+## Moving commits to other branch
+
+Scenario: you committed to a branch `master` instead of your `feature/magical-branch-name` but did not yet push. What now?
+
+(You are on master branch.)
+
+```
+git checkout feature/<branch-name>
+git merge master
+git checkout master
+git reset --hard origin/master
+```
+
+Stuff from `master` is now in feature branch, and `master` itself was resetted to its origin state. As nothing was pushed, nothing happened.
+
+Instead of `master`, of course, you might use `some/other-branch`.
+
 ## Credentials
 
 * To remember credentials by deamon:
