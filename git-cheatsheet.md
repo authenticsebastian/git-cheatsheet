@@ -114,6 +114,16 @@ Instead of `master`, of course, you might use `some/other-branch`.
 
  `git config --global --unset credential.helper`
 
+## Removing file from tracking
+
+* If file was committed once but we want to remove it from tracking, the following command will do:
+
+ `git update-index --assume-unchanged <file>`
+
+* To revert it:
+
+ `git update-index --no-assume-unchanged path/to/file`
+
 ## Getting rid of `.idea`
 
 If someone committed and pushed `.idea` folder to the repo, it will become problematic. This is the solution:
