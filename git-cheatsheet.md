@@ -122,7 +122,7 @@ Instead of `master`, of course, you might use `some/other-branch`.
 
 * To revert it:
 
- `git update-index --no-assume-unchanged path/to/file`
+ `git update-index --no-assume-unchanged <file>`
 
 ## Getting rid of `.idea`
 
