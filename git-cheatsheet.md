@@ -137,3 +137,13 @@ mv ../.idea_backup .idea
 ```
 
 After than make sure to ignore `.idea` in your `.gitignore`.
+
+## warning: LF will be replaced by CRLF
+
+If some application (for instance, LessJS compiler) messes with line endings, git throws a warning:
+
+>warning: LF will be replaced by CRLF in {file}
+
+To get rid of it, one has to open git config file and add this setting:
+
+`autocrlf = true`
