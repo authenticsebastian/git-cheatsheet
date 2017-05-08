@@ -24,6 +24,10 @@
 
 `git branch -m <oldname> <newname>`
 
+## Change upstream
+
+`git push --set-upstream origin <branch_name>`
+
 ## Push new branch to remote
 
 `git push --set-upstream origin <branch_name>`
