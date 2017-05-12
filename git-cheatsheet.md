@@ -108,6 +108,12 @@ Stuff from `master` is now in feature branch, and `master` itself was resetted t
 
 Instead of `master`, of course, you might use `some/other-branch`.
 
+## Fetching pull request locally
+
+`git fetch origin pull/<pull-req-id>/head:<local-branch-name>`
+
+If pull request is not a branch, this comes handy.
+
 ## Credentials
 
 * To remember credentials by deamon:
