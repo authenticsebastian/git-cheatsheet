@@ -108,6 +108,22 @@ Stuff from `master` is now in feature branch, and `master` itself was resetted t
 
 Instead of `master`, of course, you might use `some/other-branch`.
 
+## Restoring deleted local file
+
+First, don’t panic, the data is still there.
+
+Run:
+
+`git reflog`
+
+Then choose last (short) hash with your branch. Next,
+
+`git checkout <hash>`
+
+And then,
+
+`git checkout -b <new-branch-name>`
+
 ## Fetching pull request locally
 
 `git fetch origin pull/<pull-req-id>/head:<local-branch-name>`
