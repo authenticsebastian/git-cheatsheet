@@ -48,8 +48,13 @@
 
 * Cleaning information on remote branches
 
- `git remote prune origin`
+`git remote prune origin`
 
+`git gc --prune=now`
+ 
+* Cleaning all branches aside from master (for badasses only)
+
+`git branch | grep -v "master" | xargs git branch -D`
 
 ## Stashing
 
